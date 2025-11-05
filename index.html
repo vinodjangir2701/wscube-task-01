@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMLCSS-Task 01</title>
+
+    <style>
+
+        /* without using 'box-sizing' cal of boxs sizes with border and padding  */
+
+        .container {
+            width: 1000px;
+            height: 540px;
+
+            background-color: rgb(243, 229, 255);
+
+            /* border: 2px solid black;
+            width: 996px;
+            height: 536px; 
+            
+            Note - Will be my all child content ----  996px width not according 1000px  -----  if using border on parent div
+            
+            */
+
+             
+        }
+
+        /* ================================  row 1  ================================== */
+
+        .row1 {
+            width: 1000px;      
+            height: 100px;
+
+            /* if using parent outer div border 2px then content will be width 996px  */
+            text-align: center;
+            font-size: 16px;
+
+            border: 2px solid black;
+
+            width: 996px;       /* 1000 - (2+2)  */
+            height: 96px;       /* 100 - (14+2+2)  */
+        }
+
+        /* ================================  row 2  ================================== */
+
+        .row2col {
+            width: 200px;
+            height: 40px;
+ 
+            float: left;
+            text-align: center;
+            border: 2px solid black;
+
+            width: 196px;    /* 200 - (2+2)  */
+            height: 36px;    /* 40 - (6+2+2)  */
+        }
+
+        /* ================================  row 3  ================================== */       
+        .row3{
+            width: 1000px;
+            height: 200px;
+            float: left;
+        }
+
+        .row3col1{
+            width: 250px;
+            height: 200px;
+            float: left;
+        }
+
+        .row3col{
+            width: 250px;
+            height: 40px;
+
+            text-align: center;
+            border: 2px solid black;
+
+            width: 246px;    /* 250 - (2+2)  */
+            height: 36px;    /* 40 - (6+2+2)  */
+        }
+
+        .row3col2{
+            width: 750px;
+            height: 200px;
+            float: left;
+
+            border: 2px solid black;
+
+            width: 746px;    /* 750 - (2+2)  */
+            height: 196px;    /* 200 - (2+2)  */
+        }
+        
+
+        /* ================================  row 4  ================================== */
+
+        .row4{
+            width: 1000px;
+            height: 50px;
+
+            float: left;
+            text-align: center;
+            border: 2px solid black;
+
+            width: 996px;    /* 1000 - (2+2)  */
+            height: 46px;    /* 50 - (12+2+2)  */
+        }
+
+        /* ================================  row 5  ================================== */
+
+        .row5{
+            width: 1000px;
+            height: 100px;
+            float: left;
+        }
+
+        .row5col{
+            width: 333.33px;
+            height: 100px;
+            float: left;
+
+            border: 2px solid black;
+
+            width: 329.33px;    /* 333.33 - (2+2)  */
+            height: 96px;    /* 100 - (2+2)  */
+             
+        }
+
+        /* ================================  row 6  ================================== */
+
+        .row6{
+            width: 1000px;
+            height: 50px;
+
+            float: left;
+            text-align: center;
+
+            border: 2px solid black;
+
+            width: 996px;    /* 1000 - (2+2)  */
+            height: 46px;    /* 50 - (12+2+2)  */
+
+         }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- ================================  row 1  ================================== -->
+
+        <div class="row1">
+            <h1>WSCUBTECH</h1>
+        </div>
+
+        <!-- ================================  row 2  ================================== -->
+
+        <div class="row2">
+            <div class="row2col"><a style="text-decoration: none; color: black;" href="#">Home</a></div>
+            <div class="row2col"><a style="text-decoration: none; color: black;" href="#">About</a></div>
+            <div class="row2col"><a style="text-decoration: none; color: black;" href="#">Course</a></div>
+            <div class="row2col"><a style="text-decoration: none; color: black;" href="#">Gallery</a></div>
+            <div class="row2col"><a style="text-decoration: none; color: black;" href="#">Contact Us</a></div>
+        </div>
+
+        <!-- ================================  row 3  ================================== -->
+
+        <div class="row3">
+            <div class="row3col1">
+                <div class="row3col"><a style="text-decoration: none; color: black;" href="#">Home</a></div>
+                <div class="row3col"><a style="text-decoration: none; color: black;" href="#">About</a></div>
+                <div class="row3col"><a style="text-decoration: none; color: black;" href="#">Course</a></div>
+                <div class="row3col"><a style="text-decoration: none; color: black;" href="#">Gallery</a></div>
+                <div class="row3col"><a style="text-decoration: none; color: black;" href="#">Contact Us</a></div>
+
+            </div>
+            <div class="row3col2">
+                <img width="746px" height="196px" src="https://images.pexels.com/photos/34581836/pexels-photo-34581836.jpeg" alt="img">
+            </div>
+        </div>
+
+        <!-- ================================  row 4  ================================== -->
+
+        <div class="row4">
+            Our clients
+        </div>
+
+        <!-- ================================  row 5  ================================== -->
+
+
+        <div class="row5">
+            <div class="row5col"><img width="329.33px" height="96px" src="https://images.pexels.com/photos/4022107/pexels-photo-4022107.jpeg" alt="img1"></div>
+            <div class="row5col"><img width="329.33px" height="96px" src="https://images.pexels.com/photos/4381480/pexels-photo-4381480.jpeg" alt="img2"></div>
+            <div class="row5col"><img width="329.33px" height="96px" src="https://images.pexels.com/photos/673535/pexels-photo-673535.jpeg" alt="img3"></div>
+        </div>
+
+        <!-- ================================  row 6  ================================== -->
+
+
+        <div class="row6">
+            <a style="text-decoration: none; color: black;" href="">Home</a> |
+            <a style="text-decoration: none; color: black;" href="">About</a> |
+            <a style="text-decoration: none; color: black;" href="">Course</a> |
+            <a style="text-decoration: none; color: black;" href="">Gallery</a> |
+            <a style="text-decoration: none; color: black;" href="">Contact Us</a>
+        </div>
+    
+    </div>
+
+</body>
+
+</html>
